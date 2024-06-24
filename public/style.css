@@ -591,3 +591,7 @@ video {
     max-width: 1536px;
   }
 }
+
+.font-Poppins {
+  font-family: Poppins, sans-serif;
+}
