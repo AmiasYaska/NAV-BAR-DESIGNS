@@ -595,3 +595,8 @@ video {
 .font-Poppins {
   font-family: Poppins, sans-serif;
 }
+
+.text-page-purple {
+  --tw-text-opacity: 1;
+  color: rgb(82 103 223 / var(--tw-text-opacity));
+}
