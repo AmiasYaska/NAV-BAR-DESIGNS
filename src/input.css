@@ -9,9 +9,9 @@
 }
 
 .btn-purple {
-    @apply bg-page-purple text-white
+    @apply bg-page-purple text-white hover:bg-page-white hover:text-black
 }
 
 .btn-white {
-    @apply bg-page-white 
+    @apply bg-page-white hover:bg-page-purple hover:text-page-white
 }
