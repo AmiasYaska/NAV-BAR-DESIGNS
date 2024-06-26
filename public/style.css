@@ -993,6 +993,10 @@ video {
     width: 75%;
   }
 
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
   .sm\:text-left {
     text-align: left;
   }
