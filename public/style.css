@@ -581,10 +581,6 @@ video {
   margin-bottom: 3rem;
 }
 
-.mr-12 {
-  margin-right: 3rem;
-}
-
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -605,20 +601,12 @@ video {
   max-width: 24rem;
 }
 
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-col {
   flex-direction: column;
 }
 
 .flex-col-reverse {
   flex-direction: column-reverse;
-}
-
-.items-start {
-  align-items: flex-start;
 }
 
 .items-center {
@@ -633,10 +621,10 @@ video {
   justify-content: space-between;
 }
 
-.space-x-3 > :not([hidden]) ~ :not([hidden]) {
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
-  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-5 > :not([hidden]) ~ :not([hidden]) {
@@ -651,19 +639,23 @@ video {
   margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
 }
 
-.space-y-3 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
-}
-
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-l-full {
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
 }
 
 .bg-orange-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 115 22 / var(--tw-bg-opacity));
+}
+
+.bg-red-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
 }
 
 .p-6 {
@@ -694,10 +686,6 @@ video {
   padding-top: 0.5rem;
 }
 
-.text-left {
-  text-align: left;
-}
-
 .text-center {
   text-align: center;
 }
@@ -707,18 +695,13 @@ video {
   line-height: 2.5rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .font-bold {
   font-weight: 700;
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .text-gray-500 {
@@ -729,11 +712,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .btn {
@@ -811,6 +789,10 @@ video {
 
   .md\:justify-start {
     justify-content: flex-start;
+  }
+
+  .md\:bg-transparent {
+    background-color: transparent;
   }
 
   .md\:text-left {
