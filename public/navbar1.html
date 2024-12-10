@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+    <header class="container mx-auto px-6">
+        <nav class="flex flex-wrap justify-between items-center py-6 ">
+            <a href="#" class="text-red-600 font-bold text-3xl hover:text-red-400 transition duration-300 ease-in-out">Amias</a>
+            
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-toggle" class="md:hidden text-gray-600 hover:text-gray-800 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+
+            <!-- nav menu -->
+            <ul id="nav-menu" class="hidden md:flex space-x-6 items-center">
+                <li><a href="#" class="text-gray-800 hover:text-red-400 transition duration-300 font-medium ">Home</a></li>
+                <li><a href="#" class="text-gray-800 hover:text-red-400 transition duration-300 font-medium ">About</a></li>
+                <li><a href="#" class="text-gray-800 hover:text-red-400 transition duration-300 font-medium ">Products</a></li>
+                <li><a href="#" class="text-gray-800 hover:text-red-400 transition duration-300 font-medium ">Contact</a></li>
+            </ul>
+
+            <!-- Login -->
+            <div class="hidden md:block">
+                <a href="#" class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-400 transition duration-300 ease-in-out">Log in</a>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu (Responsive) -->
+        <!-- <div id="mobile-menu" class="md:hidden hidden">
+            <ul class="bg-white shadow-lg rounded-lg py-4 space-y-3">
+                <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-red-50">Home</a></li>
+                <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-red-50">About</a></li>
+                <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-red-50">Services</a></li>
+                <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-red-50">Contact</a></li>
+                <li class="px-4">
+                    <a href="#" class="block bg-red-600 text-white text-center px-4 py-2 rounded-md hover:bg-red-700">
+                        Get Started
+                    </a>
+                </li>
+            </ul>
+        </div> -->
+        
+    </header>
+
+    <script>
+        // Mobile menu toggle functionality
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            navMenu.classList.toggle('hidden');
+            mobileMenuToggle.setAttribute('aria-expanded', mobileMenu.classList.contains('hidden') ? 'false' : 'true');
+        });
+    </script>
+    
+</body>
+</html>
